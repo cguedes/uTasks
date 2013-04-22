@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Carlos Guedes: Teacher, Speaker, Software Engineer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Carlos Guedes presence on the Web">
+    <meta name="author" content="Carlos Guedes">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" >
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.min.css" >
+    <link rel="stylesheet" href="css/site.css" >
+    <link rel="stylesheet" href="css/pages.css" >
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav -->
+    <link rel="shortcut icon" href="favicon.ico">
+  </head>
+
+  <body>
+    <script type="text/x-handlebars">
+
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
+
+        <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <ul class="nav">
+              <li>{{#linkTo "index"}}Home{{/linkTo}}</li>
+              <li>{{#linkTo "about"}}About{{/linkTo}}</li>
+
+            </ul>
+
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li>{{#linkTo "contacts"}}Contacts{{/linkTo}}</li>
+                <li>{{#linkTo "projects"}}Projects{{/linkTo}}</li>
+                <li>{{#linkTo "talks"}}Talks{{/linkTo}}</li>
+                <li>{{#linkTo "blog"}}Blog{{/linkTo}}</li>
+              </ul>
+              <ul class="nav pull-right">
+                <li><a href="http://github.com/cguedes">See me on GitHub</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" >
+      <div class="carousel-inner">
+
+        <div class="item active">
+          <img src="images/banners/banner-0.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Carlos Guedes (blog)</h1>
+              <p class="lead"><em>Live as if you were to die tomorrow. Learn as if you were to live forever.</em></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="images/banners/banner-1.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Carlos Guedes</h1>
+              <p class="lead"><em>Live as if you were to die tomorrow. Learn as if you were to live forever.</em></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="images/banners/banner-2.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Carlos Guedes</h1>
+              <p class="lead"><em>Live as if you were to die tomorrow. Learn as if you were to live forever.</em></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="images/banners/banner-3.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Carlos Guedes</h1>
+              <p class="lead"><em>Live as if you were to die tomorrow. Learn as if you were to live forever.</em></p>
+            </div>
+          </div>
+        </div>        
+
+        <div class="item">
+          <img src="images/banners/banner-4.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Carlos Guedes</h1>
+              <p class="lead"><em>Live as if you were to die tomorrow. Learn as if you were to live forever.</em></p>
+            </div>
+          </div>
+        </div>  
+
+        <div class="item">
+          <img src="images/banners/banner-5.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Carlos Guedes</h1>
+              <p class="lead"><em>Live as if you were to die tomorrow. Learn as if you were to live forever.</em></p>
+            </div>
+          </div>
+        </div>  
+
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div><!-- /.carousel -->
+
+
+    <div class="container">
+      {{outlet}}
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p>&copy; 2013 Carlos Guedes &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+      <div class="row" >
+        <div class="span12">
+          <p style="font-size:12px" class="muted">Disclamer: Opinions expressed herein are mine and do not represent my employer''s view in any way.</p>
+        </div>
+      </div>
+
+    </div><!-- /.container -->
+
+    </script>
+
+    <script type="text/x-handlebars" id="index">
+      <div class="marketing">
+        <div class="row">
+          <div class="span4">
+            <img class="img-circle" src="images/tiles/projects.png">
+            <h2>Projects</h2>
+            <p>Only the continuous exercise of writing and code analysis allows a professional software development and teaching is continually updated. Here are the current projects that develop or developed.</p>
+            <p>{{#linkTo projects class="btn"}}More info &raquo;{{/linkTo}}</p>
+          </div><!-- /.span4 -->
+          <div class="span4">
+            <img class="img-circle" src="images/tiles/talks.png">
+            <h2>Talks</h2>
+            <p>The spoken and live performance are also essencial competences. In this section I list the talks and training sessions that I did.</p>
+            <p>{{#linkTo talks class="btn"}}More info &raquo;{{/linkTo}}</p>
+          </div><!-- /.span4 -->
+          <div class="span4">
+            <img class="img-circle" src="images/tiles/blog.png">
+            <h2>Blog</h2>
+            <p>The writing exercise requires the structuring of ideas, and wonder how others will read our texts. On my blog you can find technical and non-technical articles on diverse topics.</p>
+            <p>{{#linkTo blog class="btn"}}More info &raquo;{{/linkTo}}</p>
+          </div><!-- /.span4 -->
+        </div><!-- /.row -->
+      </div><!-- /.marketing -->
+    </script>  
+
+    <script type="text/x-handlebars" id="about">
+    <div class="about">
+      <img src="images/cguedes-profile-photo.jpg" class="pull-left img-polaroid profile-photo"  />
+      <p><strong>Carlos Guedes</strong> combines the teaching activities at <a href="http://www.isel.pt"><abbr title="Instituto Superior de Engenharia de Lisboa">ISEL</abbr></a>, and research and development at <a href="http://www.cc.isel.ipl.pt"><abbr title="Centro de Cálculo do ISEL">CCISEL</abbr></a>, with work at <a href="http://www.coriant.com">Coriant</a> (former <a href="http://www.nokiasiemensnetworks.com/">Nokia Siemens Networks</a> optical networks division).</p>
+      <p>Since 2011, cooperates with Coriant, integrating the team of software architecture of <abbr title="Telecommunications Network Management System">TNMS</abbr> project, developed with J2EE stack. Previously worked at <a href="http://www.sapo.pt/">SAPO</a>, as a consultant by <a href="http://www.rupeal.com">RUPEAL</a>, having participated in the development of <a href="http://sdb.sapo.pt">SAPO Service Delivery Broker</a>.</p>
+      <p>While teacher at ISEL, since 2005, he teaches courses related with <em>programming</em>, <em>web application development</em> and <em>systems and information technology</em>, collaborating actively in the curriculum of Internet Programming, Software Lab and Computer Graphics. As member of CCISEL, since 2001, regularly participates in R&amp;D and training courses for industry and governmental institutions.</p>
+      <p>In 2012 collaborated with <a href="http://www.microsoft.pt">Microsoft Portugal</a> in the release of <a href="http://msdn.microsoft.com/en-US/windows">Windows 8</a>, having participated in training sessions regarding the platform in the role of <a href="http://www.devcamps.ms/windows">Windows Camps instructor</a>.</p>
+      <p>It is also author and responsible of the eLearning platform <a href="http://www.thoth.cc.e.ipl.pt">Thoth</a>, used in many of the courses of <a href="http://www.adeetc.isel.pt">ADEETC</a> at ISEL.</p>
+    </div>
+    </script>  
+
+    <script type="text/x-handlebars" id="contacts">
+      <div class="contacts">
+        <h2>Contacts</h2>
+
+        {{#each contacts}}
+        <div class="media">
+          <span class="pull-left" ><i {{bindAttr class=":icon-3x contactIcon"}} ></i></span>
+          <div class="media-body">
+            <h4 class="media-heading">{{contactType}}</h4>
+            <a {{bindAttr href="contactLink"}}>{{contactLink}}</a>
+          </div>
+        </div>
+        {{/each}}
+
+      </div>
+    </script>  
+
+
+    <script type="text/x-handlebars" id="projects">
+      <div class="projects">
+        <img class="img-circle" src="images/tiles/projects.png" />
+      </div>
+    </script>  
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/libs/jquery-1.9.1.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- emberJS -->
+    <script src="js/libs/handlebars-1.0.0-rc.3.js"></script>
+    <script src="js/libs/ember-1.0.0-rc.2.js"></script>
+    <script src="js/libs/ember-data-latest.js"></script>
+    <script src="js/libs/showdown.js"></script>
+    <script src="js/libs/moment.js"></script>
+    <script src="js/app.js"></script>
+
+    <script>
+      !function ($) {
+        $(function(){
+          $('#myCarousel').carousel({
+            interval: 50000
+          });
+        })
+      }(window.jQuery)
+    </script>
+  </body>
+</html>
